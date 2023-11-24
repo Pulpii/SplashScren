@@ -31,6 +31,23 @@ public class QuizSplashActivity extends AppCompatActivity {
         }
 
         Animation fade2 = AnimationUtils.loadAnimation(this, R.anim.fade_in2);
+        fade2.setAnimationListener(new Animation.AnimationListener() {
+            public void onAnimationEnd(Animation animation) {
+                startActivity(new Intent(QuizSplashActivity.this,
+                        MainActivity.class));
+                QuizSplashActivity.this.finish();
+            }
+
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
     }
 
     @Override
