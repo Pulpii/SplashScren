@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".QuizSplashActivity" android:orientation="vertical">
+    <TextView
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/logo_color"
+            android:gravity="center"
+            android:text="@string/app_logo_top"
+            android:textSize="@dimen/logo_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TextViewTopTitle"/>
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:stretchColumns="*"
+            android:id="@+id/TableLayout01">
+        <TableRow
+                android:id="@+id/TableRow01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal">
+            <ImageView
+                    android:src="@mipmap/alvaro_foreground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/imageView"/>
+            <ImageView
+                    android:src="@mipmap/supa_foreground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView2"/>
+        </TableRow>
+        <TableRow
+                android:id="@+id/TableRow02"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical|center_horizontal">
+            <ImageView
+                    android:src="@mipmap/elyoya_foreground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" android:id="@+id/imageView3"/>
+            <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/myrwn_foreground"
+                    android:id="@+id/imageView4"/>
+        </TableRow>
+    </TableLayout>
+    <TextView
+            android:gravity="center"
+            android:text="@string/app_logo_bottom"
+            android:textSize="@dimen/logo_size"
+            android:textColor="@color/logo_color"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/TextViewBottomTitle"/>
+    <TextView
+            android:gravity="center"
+            android:text="@string/app_version_info"
+            android:textSize="@dimen/version_size"
+            android:textColor="@color/version_color"
+            android:background="@color/version_bkgrd"
+            android:lineSpacingExtra="@dimen/version_size"
+            android:layout_marginTop="15dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/TextViewBottomVersion"/>
+</LinearLayout>
